@@ -1,10 +1,88 @@
 ---
-layout: default
----	
-      	{% include video.html %}
-      	{% include people.html %}
-      	{% include reform.html %}
-      	{% include petition.html %}
-      	{% include banner.html %}
-      	
+layout: base
+title: Quien te financia
+published: true
+---
 
+<script>
+        $(document).ready(function() {
+            $('.fancybox').fancybox({
+                padding : 0,
+                prevEffect : 'none',
+                nextEffect : 'none',
+                closeBtn  : true,
+                arrows    : true,
+
+            });
+        });
+    </script>
+
+<section class="content home presidenciales">
+
+  <div class="manAbove"> </div>
+  <div class="theBlackBox">
+      <!--<h1 class="titleLine"><i class="fa fa-star"></i> FALTANDO <i class="fa fa-star"></i></h1>-->
+      <h2 class="titleLine">Faltando sólo</h2>
+
+      </div>
+          <!-- <div id="note"></div> -->
+          <p>
+          </br>
+          
+          <div id="countdown"></div>
+          <h2 class="titleLine">para la entrada en vigencia de la ley, el Gobierno plantea postergarla.</h2>
+        </p>
+        <p><h3>En relación al anuncio por parte del Gobierno sobre la suspensión de la entrada en vigencia de la Ley del Lobby para Parlamentarios y Embajadores, Fundación Ciudadano Inteligente declara lo siguiente:
+No hay razón para no aplicar la Ley de Lobby a los embajadores. En caso que estos sostengan reuniones cuya publicidad pueda afectar el interés nacional o la seguridad nacional, tienen la posibilidad de no registrarlas públicamente e informar de su realización, de manera reservada y anualmente, al Contralor. 
+En el primer proyecto de ley sobre la materia que ingresó el Presidente Lagos el año 2003, ya se establecía el registro público de las reuniones y comunicaciones efectuadas entre los lobbystas y los embajadores. 
+Existió la oportunidad durante 11 años para discutir en el Congreso la pertinencia de incluir a los embajadores en esta regulación, por lo cual esta discusión es extemporánea.
+Nos parece inaceptable que a dos días de la entrada en vigencia de la ley y luego de 10 meses de su aprobación, el Congreso pida que se aplace, dado que no se prepararon para su implementación. 
+No se entiende que el Gobierno central haya podido capacitar y prepararse para su entrada en vigencia y no así el Congreso.
+
+Por estas razones, Fundación Ciudadano Inteligente rechaza categóricamente el anuncio de un ingreso de proyecto de ley para modificar la Ley de Lobby.
+</h3>
+        
+         </p>
+<!--           <div class="streaming">
+           <a 
+            href="rtmp://camara.ztreaming.com:80/camara8/streamcam8.sdp" 
+            style="display:block;width:400px;height:300px;margin: 0 auto;" 
+
+            id="envivo">
+          </a>
+          </div> -->
+
+        <iframe src="//player.vimeo.com/video/91416388" width="100%" height="560" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+        
+
+        <!--<a href="#" onclick="window.open(&quot;https://twitter.com/share?url=http://localhost:3000/congresistas&amp;via=ciudadanoi&amp;text=Sin las reglas del juego la ley de lobby es letra muerta. Que @GobiernoDeChile dicte su reglamento! http://leydelobby.cl/&quot;,&quot;twitter&quot;,&quot;width=450, height=250&quot;)">
+            <div class="btn">
+              <i class="fa fa-twitter"></i>
+              Súmate a la campaña y twittea al @GobiernoDeChile!
+            </div>
+        </a>-->
+
+
+
+    </div>
+</section>
+<script type="text/javascript">
+flowplayer( "envivo", "/js/flowplayer-3.2.18.swf", {
+  clip: {
+            autoPlay: true,
+                                  live: true,
+                                  autoBuffering: true,
+                                  provider: 'rtmp'
+                                  },
+                                  plugins: {
+                                  rtmp: { 
+                                  url: '/js/flowplayer.rtmp-3.2.13.swf'
+                                  }
+                                  }
+                                  });
+</script>
+
+
+{% if (site.categories.senadores or site.categories.diputados) %}
+
+{% endif %}
